@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Electrical engineering portfolio showcasing embedded systems, robotics, circuits, and research projects." />
+  <title>Justin Huang | Electrical Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">JH</span>
+      <span>Justin Huang</span>
+    </a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a class="nav-cta" href="mailto:justinhuangus@gmail.com">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" id="about">
+      <div class="hero-copy">
+        <span class="eyebrow">Electrical Engineering · Embedded Systems · Robotics</span>
+        <h1>I build hardware systems that sense, communicate, and move.</h1>
+        <p>
+          Electrical engineering student focused on embedded systems, autonomous hardware,
+          signal processing, and practical circuit design. This portfolio is built to grow:
+          every project card opens into a deeper technical case study.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View projects</a>
+          <a class="button secondary" href="mailto:justinhuangus@gmail.com">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="status-dot"></div>
+        <p class="panel-label">Current focus</p>
+        <h2>Embedded + autonomous systems</h2>
+        <div class="mini-grid">
+          <div><span>MCUs</span><strong>STM32 · ESP32</strong></div>
+          <div><span>Software</span><strong>Python · C/C++</strong></div>
+          <div><span>Hardware</span><strong>KiCad · LTspice</strong></div>
+          <div><span>Systems</span><strong>MAVLink · ArduPilot</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="projects">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Selected work</span>
+          <h2>Projects</h2>
+        </div>
+        <p>Click any project to open a full technical breakdown.</p>
+      </div>
+      <div class="project-grid" id="project-grid"></div>
+    </section>
+
+    <section class="section shell" id="experience">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Background</span>
+          <h2>Experience</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-card">
+          <div class="timeline-icon">ML</div>
+          <div>
+            <div class="timeline-top">
+              <h3>Machine Learning Undergraduate Researcher</h3>
+              <span>2026 — Present</span>
+            </div>
+            <p>UC Irvine · Hyperspectral imaging, wildfire detection, VNIR/SWIR processing, Python</p>
+          </div>
+        </article>
+
+        <article class="timeline-card">
+          <div class="timeline-icon">IEEE</div>
+          <div>
+            <div class="timeline-top">
+              <h3>IEEE Member / Project Participant</h3>
+              <span>2023 — Present</span>
+            </div>
+            <p>Electronics projects involving circuit assembly, soldering, embedded hardware, schematics, and PCB layout.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <p>Built as a growing engineering portfolio.</p>
+    <div>
+      <a href="mailto:justinhuangus@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/justin-huang-729792246/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
