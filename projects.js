@@ -6,22 +6,22 @@ const PROJECTS = [
     category: "Robotics / Embedded Systems",
     year: "2026",
     summary: "Autonomous quadcopter integrating STM32 flight control, MAVLink telemetry, Raspberry Pi video, and YOLO-based object detection.",
-    image: "images/drone-main.jpeg",
+    image: "drone-main.jpeg",
     imageAlt: "Autonomous quadcopter on a work table",
     demoUrl: "https://youtube.com/shorts/QbR_BUqkFbw",
     gallery: [
       {
-        src: "images/drone-angle.jpeg",
+        src: "drone-angle.jpeg",
         alt: "Second angle of the autonomous quadcopter",
         caption: "Integrated quadcopter hardware showing the flight stack, wiring, radio hardware, and propulsion system."
       },
       {
-        src: "images/controller.jpeg",
+        src: "controller.jpeg",
         alt: "Radio controller used with the drone",
         caption: "Radio controller used during manual testing and flight setup."
       },
       {
-        src: "images/mission-planner.png",
+        src: "mission-planner.png",
         alt: "Mission Planner ground station interface",
         caption: "Mission Planner ground station used with ArduPilot for configuration and flight-system monitoring."
       }
