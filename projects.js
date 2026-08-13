@@ -51,36 +51,6 @@ const PROJECTS = [
     ]
   },
   {
-    slug: "555-piano",
-    title: "555 Timer Piano",
-    category: "Analog / Circuit Design",
-    year: "2025",
-    summary: "Multi-note audio circuit using 555 timer astable oscillators, tuned RC networks, switches, LEDs, and oscilloscope-based verification.",
-    image: "",
-    imageAlt: "555 timer piano project",
-    tags: ["555 Timer", "Analog", "RC Circuits", "Soldering", "Oscilloscope"],
-    metrics: [
-      ["8", "distinct notes"],
-      ["<2%", "pitch deviation"],
-      ["Analog", "signal generation"],
-      ["Bench", "verified"]
-    ],
-    overview: "A hands-on analog electronics project focused on oscillator design, RC timing, measurement, and debugging. Multiple switchable frequencies were generated using 555 timer astable circuits and tuned against target notes.",
-    highlights: [
-      "Calculated RC timing values for multiple target frequencies.",
-      "Verified output waveforms and frequency using an oscilloscope.",
-      "Assembled and soldered switches, LEDs, and passive components.",
-      "Reduced signal noise through iterative circuit debugging."
-    ],
-    architecture: [
-      "Power source",
-      "Switch / note selection",
-      "555 timer astable oscillator",
-      "RC timing network",
-      "Audio output"
-    ]
-  },
-  {
     slug: "hyperspectral-research",
     title: "Hyperspectral Wildfire Research",
     category: "Research / Computer Vision",
