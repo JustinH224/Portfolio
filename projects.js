@@ -1,6 +1,42 @@
 
 const PROJECTS = [
   {
+    slug: "touchless-industrial-hmi",
+    title: "Touchless Industrial HMI",
+    category: "Embedded Systems / Edge AI",
+    year: "2026",
+    summary: "Hackathon-built contactless industrial interface using an Arduino UNO Q, camera-based gesture detection, and Modulino LED/buzzer feedback for touch-free machine control.",
+    image: "",
+    imageAlt: "Touchless industrial HMI built for the Embedded World North America Hackathon",
+    links: [
+      { label: "GitHub", url: "https://github.com/vn-device/ewna-hackathon-team9" },
+      { label: "Hackaday", url: "https://hackaday.io/project/206736-ewna-hackathon-9" }
+    ],
+    tags: ["Arduino UNO Q", "Modulino", "I2C / Qwiic", "Edge Impulse", "FOMO", "OpenCV", "Python", "Embedded Linux"],
+    metrics: [
+      ["UNO Q", "dual-core platform"],
+      ["I2C", "peripheral bus"],
+      ["FOMO", "edge vision model"],
+      ["100%", "on-device processing"]
+    ],
+    overview: "Built during the Embedded World North America Hackathon, this project is a touchless human-machine interface for warehouse and industrial environments. I focused on the hardware feedback and integration side: connecting and testing the Arduino UNO Q with Modulino Pixels and a buzzer, then validating the bridge between the Linux vision application and the real-time microcontroller so detected gestures reliably triggered physical outputs.",
+    highlights: [
+      "Built and tested the hardware feedback subsystem using Arduino Modulino Pixels and a buzzer connected over the Qwiic/I2C bus.",
+      "Mapped pause, confirm, swipe, idle, and fault states to distinct LED patterns and acoustic feedback for clear operator status indication.",
+      "Integrated the Python vision application with the Arduino real-time control layer using RouterBridge/RPC and validated end-to-end command delivery.",
+      "Trained and deployed an Edge Impulse FOMO MobileNetV2 gesture-detection model using labeled camera images for palm, thumbs-up, and swipe inputs.",
+      "Debugged board connectivity, peripheral control, model behavior, and real-time system integration during a two-day hackathon build."
+    ],
+    architecture: [
+      "USB webcam — gesture input",
+      "Arduino UNO Q Linux core — OpenCV + Edge Impulse inference",
+      "RouterBridge / RPC",
+      "STM32 real-time core",
+      "Qwiic / I2C bus",
+      "Modulino Pixels + buzzer — visual and acoustic feedback"
+    ]
+  },
+  {
     slug: "autonomous-drone",
     title: "Autonomous Quadcopter Drone",
     category: "Robotics / Embedded Systems",
