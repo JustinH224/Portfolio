@@ -10,9 +10,13 @@ const cover = project.image
   ? `<img src="${project.image}" alt="${project.imageAlt || project.title}">`
   : `<div class="detail-placeholder">Project image coming soon.</div>`;
 
-const demoButton = project.demoUrl
-  ? `<a class="button primary demo-button" href="${project.demoUrl}" target="_blank" rel="noopener">▶ Watch Flight Demo</a>`
-  : "";
+const actionButtons = project.links?.length
+  ? project.links.map((link, index) =>
+      `<a class="button ${index === 0 ? "primary" : ""}" href="${link.url}" target="_blank" rel="noopener">${link.label}</a>`
+    ).join("")
+  : project.demoUrl
+    ? `<a class="button primary demo-button" href="${project.demoUrl}" target="_blank" rel="noopener">▶ Watch Flight Demo</a>`
+    : "";
 
 const gallery = project.gallery?.length
   ? `
@@ -48,7 +52,7 @@ root.innerHTML = `
           ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}
         </div>
         <div class="project-actions">
-          ${demoButton}
+          ${actionButtons}
         </div>
       </div>
 
