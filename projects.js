@@ -40,7 +40,7 @@ const PROJECTS = [
     slug: "autonomous-drone",
     title: "Autonomous Quadcopter Drone",
     category: "Robotics / Embedded Systems",
-    year: "2026",
+    year: "Apr-Jun 2026",
     summary: "Autonomous quadcopter integrating STM32 flight control, MAVLink telemetry, Raspberry Pi video, and YOLO-based object detection.",
     image: "drone-main.jpeg",
     imageAlt: "Autonomous quadcopter on a work table",
